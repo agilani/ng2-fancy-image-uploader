@@ -5,7 +5,7 @@ export const htmlTemplate =
     <div class="match-parent" *ngSwitchCase="statusEnum.NotSelected">
       <button type="button" class="add-image-btn" (click)="onImageClicked($event)">
         <div *ngIf="defaultImagePath()">
-          <img src="defaultImagePath()"></img>
+          <img [src]="defaultImagePath()" #imageElement>
         </div>
         <div *ngIf="!defaultImagePath()">
           <p class="plus">+</p>
