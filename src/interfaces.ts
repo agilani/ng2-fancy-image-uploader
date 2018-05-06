@@ -18,6 +18,7 @@ export interface FancyImageUploaderOptions extends FileUploaderOptions {
   autoUpload?: boolean;
   cropEnabled?: boolean;
   cropAspectRatio?: number;
+  defaultImagePath: string; 
 }
 
 export interface ImageResult {

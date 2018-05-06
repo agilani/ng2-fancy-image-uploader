@@ -70,6 +70,10 @@ export class FancyImageUploaderComponent implements OnInit, OnDestroy, AfterView
     return this._imageThumbnail;
   }
 
+  get defaultImagePath() {
+    return this.options ? this.options.defaultImagePath : null;
+  }
+
   set imageThumbnail(value) {
     this._imageThumbnail = value;
     this.propagateChange(this._imageThumbnail);

@@ -4,11 +4,14 @@ export const htmlTemplate =
     
     <div class="match-parent" *ngSwitchCase="statusEnum.NotSelected">
       <button type="button" class="add-image-btn" (click)="onImageClicked($event)">
-          <div>
-            <p class="plus">+</p>
-            <p>Click here to add image</p>
-            <p>Or drop image here</p>
-          </div>
+        <div *ngIf="defaultImagePath()">
+          <img src="defaultImagePath()"></img>
+        </div>
+        <div *ngIf="!defaultImagePath()">
+          <p class="plus">+</p>
+          <p>Click here to add image</p>
+          <p>Or drop image here</p>
+        </div>
       </button>
     </div>
 

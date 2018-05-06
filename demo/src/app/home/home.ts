@@ -12,7 +12,8 @@ export class Home {
       thumbnailWidth: 200,
       uploadUrl: 'https://fancy-image-uploader-demo.azurewebsites.net/api/demo/upload',
       allowedImageTypes: ['image/png', 'image/jpeg'],
-      maxImageSize: 3
+      maxImageSize: 3,
+      defaultImagePath: 'http://localhost:8000/storage/images/gfzyc5otZYVttXbpMNkffUo3XIvf8edpVozMuuxy.jpeg'
   };
 
   response: string;
